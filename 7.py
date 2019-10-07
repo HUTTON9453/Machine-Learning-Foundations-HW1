@@ -30,12 +30,12 @@ def pocket(dataset, itertimes):
     while curiter < itertimes:
         if dataset[i][5] != signf(np.dot(w,dataset[i][0:5])):
             w = w + dataset[i][5] * dataset[i][0:5]
-            #6
+            #7
             '''
             if errorrate(w, dataset) < errorrate(pocketw, dataset):
                 pocketw = w
             '''
-            #7
+            #8
             pocketw = w
             
             curiter = curiter + 1
